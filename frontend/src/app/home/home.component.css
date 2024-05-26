@@ -1,0 +1,6 @@
+#productImg {
+    max-height: 200px;
+    width: auto;
+    object-fit: contain;
+    padding: 0 90px
+}

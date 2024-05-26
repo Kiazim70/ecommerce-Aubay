@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="batchapiback" />
+        <module name="backend" />
+        <module name="frontend" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="batch-api-back" target="1.6" />
+      <module name="batchapiback (1)" target="17" />
+      <module name="batchapiback (2)" target="21" />
+      <module name="com.ecommerce.batchapiback" target="17" />
+      <module name="ecommerce-parent" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="backend" options="-parameters" />
+      <module name="batch-api-back" options="-parameters" />
+      <module name="batchapiback" options="-parameters" />
+      <module name="batchapiback (1)" options="-parameters" />
+      <module name="com.ecommerce.batchapiback" options="-parameters" />
+      <module name="ecommerce-parent" options="-parameters" />
+      <module name="pom-parent" options="" />
+    </option>
+  </component>
+</project>

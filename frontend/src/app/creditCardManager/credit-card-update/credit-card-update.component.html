@@ -1,0 +1,58 @@
+
+  <!-- credit-card.component.html -->
+<form [formGroup]="creditCardUpdate" (ngSubmit)="onSubmit()" class="credit-card-form">
+
+  <div class="form-group">
+    <label for="id">Id</label>
+    <input type="text" id="id" formControlName="id" placeholder="Enter Id">
+    <div *ngIf="creditCardUpdate.get('id').invalid && (creditCardUpdate.get('id').dirty || creditCardUpdate.get('id').touched)">
+      <div *ngIf="creditCardUpdate.get('id').errors.required">Card number is required.</div>
+      <div *ngIf="creditCardUpdate.get('id').errors.pattern">Invalid card number.</div>
+    </div>
+  </div>
+
+    <div class="form-group">
+        <label for="cardType">Card Type</label>
+        <select id="cardType" formControlName="cardType">
+          <option value="Visa">Visa</option>
+          <option value="Mastercard">Mastercard</option>
+          <option value="American Express">American Express</option>
+          <!-- Add more card types as needed -->
+        </select>
+      </div>
+    <div class="form-group">
+      <label for="cardNumber">Card Number</label>
+      <input type="text" id="cardNumber" formControlName="cardNumber" placeholder="Enter Card Number">
+      <div *ngIf="creditCardUpdate.get('cardNumber').invalid && (creditCardUpdate.get('cardNumber').dirty || creditCardUpdate.get('cardNumber').touched)">
+        <div *ngIf="creditCardUpdate.get('cardNumber').errors.required">Card number is required.</div>
+        <div *ngIf="creditCardUpdate.get('cardNumber').errors.pattern">Invalid card number.</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="expirationDate">Expiration Date</label>
+      <input type="text" id="expirationDate" formControlName="expirationDate" placeholder="MM/YY">
+      <div *ngIf="creditCardUpdate.get('expirationDate').invalid && (creditCardUpdate.get('expirationDate').dirty || creditCardUpdate.get('expirationDate').touched)">
+        <div *ngIf="creditCardUpdate.get('expirationDate').errors.required">Expiration date is required.</div>
+        <div *ngIf="creditCardUpdate.get('expirationDate').errors.pattern">Invalid expiration date.</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="cvv">CVV</label>
+      <input type="text" id="cvv" formControlName="cvv" placeholder="Enter CVV">
+      <div *ngIf="creditCardUpdate.get('cvv').invalid && (creditCardUpdate.get('cvv').dirty || creditCardUpdate.get('cvv').touched)">
+        <div *ngIf="creditCardUpdate.get('cvv').errors.required">CVV is required.</div>
+        <div *ngIf="creditCardUpdate.get('cvv').errors.pattern">Invalid CVV.</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="customer_id">Customer_Id</label>
+      <input type="text" id="customer_id" formControlName="customer_id" placeholder="Enter Customer_Id">
+      <div *ngIf="creditCardUpdate.get('customer_id').invalid && (creditCardUpdate.get('customer_id').dirty || creditCardUpdate.get('customer_id').touched)">
+        <div *ngIf="creditCardUpdate.get('customer_id').errors.required">customer_id is required.</div>
+        <div *ngIf="creditCardUpdate.get('customer_id').errors.pattern">Invalid customer_id</div>
+      </div>
+    </div>
+   
+    <button type="submit" [disabled]="creditCardUpdate.invalid">Submit</button>
+  </form>
+  

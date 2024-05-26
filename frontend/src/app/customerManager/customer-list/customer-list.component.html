@@ -1,0 +1,68 @@
+
+<h3>Customer-List</h3>
+  <!-- customer-list.component.html -->
+<mat-form-field>
+    <input matInput placeholder="Search" [(ngModel)]="searchTerm" (keyup)="applyFilter()">
+</mat-form-field>
+  
+<mat-table [dataSource]="filteredCustomers" matSort>
+    <!-- Define table columns -->
+    <ng-container matColumnDef="id">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>ID</mat-header-cell>
+        <mat-cell *matCellDef="let customer">{{ customer.id }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="firstname">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>First Name</mat-header-cell>
+        <mat-cell *matCellDef="let customer">{{ customer.firstname }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="lastname">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Last Name</mat-header-cell>
+        <mat-cell *matCellDef="let customer">{{ customer.lastname }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="email">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Email</mat-header-cell>
+        <mat-cell *matCellDef="let customer">{{ customer.email }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="phone">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Phone</mat-header-cell>
+        <mat-cell *matCellDef="let customer">{{ customer.phone }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="adress">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Asress</mat-header-cell>
+    <mat-cell *matCellDef="let customer">{{ customer.adress }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="zipcode">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Zipcode</mat-header-cell>
+      <mat-cell *matCellDef="let customer">{{ customer.zipcode }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="country">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Country</mat-header-cell>
+      <mat-cell *matCellDef="let customer">{{ customer.country }}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="action">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Action</mat-header-cell>
+        <mat-cell *matCellDef="let customer">
+          <button mat-icon-button (click)="addCustomer(customer)">
+            <mat-icon>add_circle</mat-icon>
+          </button>
+          <button mat-icon-button (click)="updateCustomer(customer.id)">
+            <mat-icon>update_circle</mat-icon>
+          </button>
+          <button mat-icon-button (click)="deleteCustomer(customer.id)">
+            <mat-icon>delete_circle</mat-icon>
+          </button>
+        </mat-cell>
+      </ng-container>
+     
+  
+
+    <!-- Define other columns -->
+  
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</mat-table>
+  
+<mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" [pageSize]="pageSize" [pageIndex]="pageIndex"
+    (page)="onPageChange($event)" [length]="totalCustomers">
+</mat-paginator>

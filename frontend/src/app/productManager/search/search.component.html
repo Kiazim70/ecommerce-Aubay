@@ -1,0 +1,61 @@
+<div class="container mt-2">
+  <ng-container *ngIf="products | async as listProducts;else failureOrLoding ">
+    <div class="card text-center">
+      <div class="card-header">Product</div>
+      <div class="card-body">
+        <div *ngIf="searchformGroup">
+        <form [formGroup]="searchformGroup" (ngSubmit)="handleSearchProduct()">
+            <div class="input-group">
+              <label class="input-group-text">keyword :</label>
+              <input type="text" formControlName="query" class="form-control">
+              <button class="btn btn-primary"><i class="bi bi-search"></i></button>
+            </div>
+        </form>
+        </div>
+        <table class="table table-bordered border-primary mt-2">
+          <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">LOCALE</th>
+            <th scope="col">DESCRIPTION</th>
+            <th scope="col">IMAGE</th>
+            <th scope="col">NAME</th>
+            <th scope="col">PRICE</th>
+            <th scope="col" colspan="5" align="center">Actions</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let p of products | async">
+            <td>{{p.id}}</td>
+            <td>{{p.locale}}</td>
+            <td>{{p.description}}</td>
+            <td>{{p.image}}</td>
+            <td>{{p.name}}</td>
+            <td>{{p.price}}</td>
+            <td>
+              <button (click)="handelDeleteProduct(p)" class="btn btn-danger">
+                <i class="bi bi-trash"></i>
+              </button>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" [pageSize]="5" [length]="totalElements" (page)="nextPage($event)"> </mat-paginator>
+
+      </div>
+      <div class="card-footer text-muted">
+        Footer
+      </div>
+    </div>
+  </ng-container>
+  <ng-template #failureOrLoding>
+    <ng-container *ngIf="errorMessage;else loading">
+      <div class="text-danger">
+        {{errorMessage}}
+      </div>
+    </ng-container>
+    <ng-template #loading>
+      Loading ......
+    </ng-template>
+  </ng-template>
+</div>

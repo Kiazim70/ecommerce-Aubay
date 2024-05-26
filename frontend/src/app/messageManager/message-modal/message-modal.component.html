@@ -1,0 +1,63 @@
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#messageModal">
+    Envoyer un message
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="messageModalLabel">Envoyer un message</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="messageForm" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+              <label for="firstName" class="form-label">Prénom</label>
+              <input type="text" id="firstName" formControlName="firstName" class="form-control" placeholder="Prénom">
+            </div>
+            <div class="mb-3">
+              <label for="lastName" class="form-label">Nom de famille</label>
+              <input type="text" id="lastName" formControlName="lastName" class="form-control" placeholder="Nom de famille">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" formControlName="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Numéro de téléphone</label>
+              <input type="text" id="phone" formControlName="phone" class="form-control" placeholder="Numéro de téléphone">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message (facultatif)</label>
+              <textarea id="message" formControlName="message" class="form-control" rows="3" maxlength="200"></textarea>
+              <div class="form-text">0/200</div>
+            </div>
+            <div class="mb-3">
+              <p>Envoyer mes conditions de financement</p>
+              <ul class="list-unstyled">
+                <li>359 €/mois</li>
+                <li>Apport: 4 400 €</li>
+                <li>Durée: 60 mois</li>
+                <li>TAEG fixe: 7.33%</li>
+                <li>Prestations facultatives: Non</li>
+              </ul>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" id="consent" formControlName="consent" class="form-check-input">
+              <label for="consent" class="form-check-label">
+                J'autorise le concessionnaire à transmettre mes informations a British Bank *
+              </label>
+            </div>
+            <div class="mb-3">
+              <p>Ce site est protégé par reCAPTCHA et les <a href="https://policies.google.com/privacy">politique de confidentialité</a> et <a href="https://policies.google.com/terms">conditions d'utilisation</a> de Google s'appliquent.</p>
+              <p>En renseignant mes coordonnées, je déclare avoir lu la <a href="https://www.linkedin.fr/politique-de-confidentialite">politique de confidentialité interne</a>.</p>
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  

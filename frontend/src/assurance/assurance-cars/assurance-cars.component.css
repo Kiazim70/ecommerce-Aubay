@@ -1,0 +1,23 @@
+.half-width-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .half-width-item {
+    flex: 0 0 50%; /* 50% de la largeur */
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  
+  .half-width-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .card {
+    width: 200%;
+  }
+  

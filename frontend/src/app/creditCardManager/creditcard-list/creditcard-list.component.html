@@ -1,0 +1,58 @@
+
+<h3>Credit-Card-List</h3>
+  <!-- customer-list.component.html -->
+<mat-form-field>
+    <input matInput placeholder="Search" [(ngModel)]="searchTerm" (keyup)="applyFilter()">
+</mat-form-field>
+
+<mat-table [dataSource]="filteredCreditCards" matSort>
+    <!-- Define table columns -->
+    <ng-container matColumnDef="id">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>ID</mat-header-cell>
+        <mat-cell *matCellDef="let creditCard">{{ creditCard.id }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="card_number">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>card_number</mat-header-cell>
+        <mat-cell *matCellDef="let creditCard">{{ creditCard.cardNumber }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="expiry_date">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>expiry_date</mat-header-cell>
+        <mat-cell *matCellDef="let creditcard">{{ creditcard.expiryDate }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="cvv">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>cvv</mat-header-cell>
+    <mat-cell *matCellDef="let creditCard">{{ creditCard.cvv }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="customer_id">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Customer ID</mat-header-cell>
+        <mat-cell *matCellDef="let creditCard">{{ creditCard.customerId }}</mat-cell>
+    </ng-container>
+    
+
+    <ng-container matColumnDef="action">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Action</mat-header-cell>
+        <mat-cell *matCellDef="let creditCard">
+          <button mat-icon-button (click)="addCreditCard(creditCard)">
+            <mat-icon>add_circle</mat-icon>
+          </button>
+          <button mat-icon-button (click)="updateCreditCard(creditCard.id)">
+            <mat-icon>update_circle</mat-icon>
+          </button>
+          <button mat-icon-button (click)="deleteCreditCard(creditCard.id)">
+            <mat-icon>delete_circle</mat-icon>
+          </button>
+        </mat-cell>
+      </ng-container>
+     
+  
+
+    <!-- Define other columns -->
+  
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</mat-table>
+  
+<mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" [pageSize]="pageSize" [pageIndex]="pageIndex"
+    (page)="onPageChange($event)" [length]="totalCreditCards">
+</mat-paginator>
+

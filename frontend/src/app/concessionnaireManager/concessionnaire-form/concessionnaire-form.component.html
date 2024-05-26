@@ -1,0 +1,48 @@
+<h3>Add Concessionnaire</h3>
+
+<div [hidden]="submitted" style="width: 400px;">
+  <form [formGroup]="concessionnaireForm" (ngSubmit)="onSubmit()">
+    <div>
+      <mat-form-field>
+        <input matInput formControlName="nameCompagny" placeholder="NameCompagny" required>
+        <mat-error *ngIf="concessionnaireForm.get('nameCompagny')?.invalid">NameCompagny is required!</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput formControlName="nsiret" placeholder="Nsiret" required>
+        <mat-error *ngIf="concessionnaireForm.get('nsiret')?.invalid">Nsiret is required!</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput formControlName="email" placeholder="Email" required>
+        <mat-error *ngIf="concessionnaireForm.get('email')?.invalid">Email is required!</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput formControlName="phone" placeholder="Phone" required>
+        <mat-error *ngIf="concessionnaireForm.get('phone')?.invalid">Phone is required!</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput formControlName="fax" placeholder="Fax" required>
+        <mat-error *ngIf="concessionnaireForm.get('fax')?.invalid">Fax is required!</mat-error>
+      </mat-form-field>
+      
+      <mat-form-field>
+        <input matInput formControlName="address" placeholder="Address" required>
+        <mat-error *ngIf="concessionnaireForm.get('address')?.invalid">Address is required!</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput formControlName="zipcode" placeholder="Zipcode" required>
+        <mat-error *ngIf="concessionnaireForm.get('zipcode')?.invalid">Zipcode is required!</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput formControlName="country" placeholder="Country" required>
+        <mat-error *ngIf="concessionnaireForm.get('country')?.invalid">Country is required!</mat-error>
+      </mat-form-field>
+    </div>
+    <button mat-raised-button color="primary" type="submit">Add</button>
+  </form>
+</div>

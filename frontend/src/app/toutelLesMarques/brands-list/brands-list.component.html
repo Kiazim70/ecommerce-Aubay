@@ -1,0 +1,29 @@
+<p>brands-list</p>
+
+<table class="table container">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Locale</th>
+        <th scope="col">BrandName</th>
+        <th scope="col">Image</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let brand of brands | async">
+        
+        <td>{{brand.id }}</td>
+        <td>{{brand.locale }}</td>
+        <td>{{brand.brandname }}</td>
+        <td>
+          <img [src]="convertBytesToImageUrl(brand.image)" alt="Brand Image">
+        </td>
+        <td>
+          <button mat-icon-button color="accent" (click)="addBrand(brand)"><mat-icon>add</mat-icon></button>
+          <button mat-icon-button color="warn" [routerLink]="['/update-brand', brand.id]"><mat-icon>update</mat-icon></button>
+          <button mat-icon-button color="warn" (click)="deleteBrand(brand.id)"><mat-icon>delete</mat-icon></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>

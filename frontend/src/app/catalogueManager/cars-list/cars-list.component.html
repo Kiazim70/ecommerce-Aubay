@@ -1,0 +1,48 @@
+<h4>Cars-List</h4>
+<input type="text" [(ngModel)]="searchTerm" (keyup)="getCars()" placeholder="Search...">
+<button class="btn btn-outline-primary btn-pill btn-lg"><span class="fa fa-search"></span></button>
+
+  
+  <table class="table container">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Locale</th>
+        <th scope="col">Category_car_id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Description</th>
+        <th scope="col">Image</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+
+
+      <tr *ngFor="let car of filteredCars ">
+        
+        <td>{{car.id }}</td>
+        <td>{{car.locale }}</td>
+        <td>{{car.category_car_id }}</td>
+        <td>{{car.name }}</td>
+        <td>{{car.price }}</td>
+        <td>{{car.description }}</td>
+        <td>
+          <img [src]="convertBytesToImageUrl(car.image)" alt="Car Image">
+        </td>
+        <td>
+          <button mat-icon-button color="accent" (click)="addCar(car)"><mat-icon>add</mat-icon></button>
+          <button mat-icon-button color="warn" [routerLink]="['/update-car', car.id]"><mat-icon>edit</mat-icon></button>
+          <button mat-icon-button color="warn" (click)="deleteCar(car.id)"><mat-icon>delete</mat-icon></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+
+<mat-paginator 
+    [length]="totalCars" 
+    [pageSize]="pageSize" 
+    [pageSizeOptions]="[5, 10, 25, 100]" 
+    (page)="onPageChange($event)">
+</mat-paginator>

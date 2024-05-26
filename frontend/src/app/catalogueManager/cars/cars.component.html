@@ -1,0 +1,82 @@
+
+
+<div class="container">
+  <div class="container text-center">
+    <h3 class="display-5">Cars</h3>
+
+  <!-- Search Box  -->
+  <input type="text" [(ngModel)]="searchTerm" (keyup)="applyFilter()" placeholder="Search...">
+  <button class="btn btn-outline-primary btn-pill btn-lg"><span class="fa fa-search"></span></button>
+
+  <!-- Display Cars -->
+  <div class="row">
+  
+    <div class="col-md-3 mb-4" *ngFor="let car of filteredCars">
+      <div class="card p-2" [routerLink]="['/car', car.id]" style="cursor: pointer;">
+
+      <img [src]="convertBytesToImageUrl(car.image)" alt="Car Image">
+      <div class="card-body p-2">
+        <h6 class="card-title">{{ car.name }}</h6>
+        <p class="card-text">{{ car.description }}</p>
+        <p class="card-text">{{ car.price | currency }}</p>
+      </div>
+      </div> 
+      
+    </div>
+
+  
+  <!-- Pagination -->
+  <mat-paginator 
+      [length]="totalCars" 
+      [pageSize]="pageSize" 
+      [pageSizeOptions]="[5, 12, 24, 100]" 
+      (page)="onPageChange($event)">
+  </mat-paginator>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<!--<div class="container">
+    <div class="container text-center">
+      <h3 class="display-5">Cars</h3>
+      <button class="btn btn-outline-success" type="submit"  href="#" (click)="addProduct()" >add-Produit</button>
+    </div>
+    <form #f="ngForm" (ngSubmit)="applyFilter()">
+      <div class="form-group">
+        <input type="text" ngModel name="searchTerm" placeholder="Enter car name">
+        <button class="btn btn-outline-primary btn-pill btn-lg"><span class="fa fa-search"></span></button>
+      </div>
+  </form>
+    <div class="row">
+      <div class="col-md-3 mb-4" *ngFor="let car of cars | async" >
+        <div class="card p-2" [routerLink]="['/car', car.id]" style="cursor: pointer;">
+          <img [src]="car.image" id="productImg" alt="{{ car.name }}"> -->
+          <!--<img [src]="convertBytesToImageUrl(car.image)" alt="Car Image">
+
+          <div class="card-body p-2">
+            <h6 class="card-title">{{ car.name }}</h6>
+            <p class="card-text">{{ car.id }}</p>
+            <p class="card-text">{{ car.locale }}</p> 
+            <p class="card-text">{{ car.price | currency }}</p>
+          </div>
+          </div>
+       
+      </div>
+  
+      <mat-paginator
+      [pageSize]="pageSize"
+      [pageIndex]="pageIndex"
+      [pageSizeOptions]="[5,10, 25, 50]"
+      [length]="totalItems"
+      (page)="onPageChange($event)"
+    ></mat-paginator> 
+    </div>
+    </div>-->

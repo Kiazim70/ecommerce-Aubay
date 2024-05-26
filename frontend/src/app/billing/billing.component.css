@@ -1,0 +1,52 @@
+body{	
+	margin:0;
+	padding:0;}
+#container{
+	width:100%;
+	height:313px;
+	}
+#left {
+	float:left;
+	background-image:url(image-header-gauche.jpg);
+	background-repeat:repeat-x;	
+	background-position:right;
+	width:471px;
+	height:313px;
+	margin-left:0px;
+}
+#right {
+	float:left;
+	background-image:url(image-header-droite.jpg);
+	background-repeat:repeat-x;
+	background-position:left;
+	width:471px;
+	height:313px;
+	margin-left:1000px;
+
+}
+#center {
+	float:left;
+	background-image:url(image-header-centre.jpg);
+	background-repeat:no-repeat;
+	width:978px;
+	height:313px;
+	margin-left:471px;
+}
+
+.centre {
+    display: flex; /* Utiliser flexbox pour centrer le contenu */
+    justify-content: center; /* Aligner horizontalement le contenu au centre */
+    align-items: center; /* Aligner verticalement le contenu au centre */
+    height: 10vh; /* Définir la hauteur de la div à 100% de la hauteur de la fenêtre */
+  }
+  
+  .centre h2 {
+    text-align: center; /* Centrer le texte horizontalement */
+  }
+  
+  /* .form-container {
+    margin-left: auto; /* Déplace le formulaire vers la gauche */
+    /* margin-right: auto; /* Centre le formulaire horizontalement */
+    /* max-width: 400px;
+   */
+  

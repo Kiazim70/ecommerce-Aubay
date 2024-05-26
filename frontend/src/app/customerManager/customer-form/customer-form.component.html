@@ -1,0 +1,46 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="customerForm" class="form-container">
+  <div class="form-section">
+    <mat-card>
+      <mat-card-title>Personal Information</mat-card-title>
+      <mat-card-content>
+        <mat-form-field>
+          <input matInput formControlName="id" placeholder="Id">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput formControlName="firstname" placeholder="FirstName">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput formControlName="lastname" placeholder="LastName">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput formControlName="email" placeholder="Email">
+        </mat-form-field>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  
+  <div class="form-section">
+    <mat-card>
+      <mat-card-title>Contact Information</mat-card-title>
+      <mat-card-content>
+        
+        <mat-form-field>
+          <input matInput formControlName="phone" placeholder="Phone">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput formControlName="adress" placeholder="Adress">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput formControlName="zipcode" placeholder="Zipcode">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput formControlName="country" placeholder="Country">
+        </mat-form-field>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div class="form-button">
+    <button mat-raised-button color="primary" type="submit">Create</button>
+  </div>
+</form>

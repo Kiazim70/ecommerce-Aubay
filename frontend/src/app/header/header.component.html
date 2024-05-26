@@ -1,0 +1,166 @@
+<!--<nav class="navbar navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Angular-Springboot Ecommerce</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+           <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="" data-bs-dismiss="offcanvas">Home</a>
+          </li>-->
+          <!--<li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="" data-bs-dismiss="offcanvas">Products</a>
+          </li>
+          <ng-container *ngIf="!isLoggedIn; else loggedIn">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="register" data-bs-dismiss="offcanvas">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="login" data-bs-dismiss="offcanvas">Login</a>
+            </li>
+          </ng-container>
+          <ng-template #loggedIn>
+             <li class="nav-item" data-bs-dismiss="offcanvas">
+              <app-cart></app-cart>
+            </li>-->
+            <!--<li class="nav-item">
+              <a class="nav-link" routerLink="order" data-bs-dismiss="offcanvas">Orders</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="user" data-bs-dismiss="offcanvas">{{ userDetails?.email }}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="" (click)="logout()" data-bs-dismiss="offcanvas">Logout</a>
+            </li>
+          </ng-template>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>-->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+   
+    <a class="navbar-brand" href="#">{{"Ecommerce" | translate}}</a>
+
+      <a class="navbar-brand" href="#">{{"Home" | translate}}</a>
+     
+      
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+     
+   <!--<form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit" href="#" (click)="search()">Search</button>
+      <li><a class="dropdown-item" href="#" (click)="search()">Search</a></li>
+    </form>-->
+  
+    <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+
+        <li class="nav-item" *ngIf="!isLoggedIn">
+          <a class="nav-link" href="#" routerLink="register">{{"Register" | translate}}</a>
+        </li>
+        <li class="nav-item" *ngIf="!isLoggedIn">
+          <a class="nav-link" href="#" routerLink="login">{{"login" | translate}}</a>
+        </li>
+
+
+        <li class="nav-item" *ngIf="isLoggedIn">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">FilterCars</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="#" routerLink="search-car">Filter-Cars</a></li>
+          </ul>
+
+        <li class="nav-item" *ngIf="isLoggedIn">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Assurance</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#" routerLink="assurancecars">Assurance-Cars</a></li>
+            <li><a class="dropdown-item" href="#" routerLink="tarif-auto-list">TarifAuto-List</a></li>
+            <li><a class="dropdown-item" href="#" routerLink="tarifauto">tarif-auto</a></li>
+
+          </ul>
+
+        <li class="nav-item" *ngIf="isLoggedIn">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Brands-Model</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#" routerLink="items-catalogue">Catalogue</a></li>
+            <!-- <li><a class="dropdown-item" href="#" routerLink="cars">Cars</a></li> -->
+            <li><a class="dropdown-item" href="#" routerLink="brands-list">Brands-List</a></li>
+            <li><a class="dropdown-item" href="#" routerLink="model-list">Model-List</a></li>
+            <li><a class="dropdown-item" href="#" routerLink="rentcar">Rent-Car</a></li>
+
+          </ul>
+
+        <li class="nav-item" *ngIf="isLoggedIn">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Car_Catalogue</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#" routerLink="items-catalogue">Catalogue</a></li>
+            <!-- <li><a class="dropdown-item" href="#" routerLink="cars">Cars</a></li> -->
+            <li><a class="dropdown-item" href="#" routerLink="cars-list">Cars-List</a></li>
+            <li><a class="dropdown-item" href="#" routerLink="category-list">Ctegory-List</a></li>
+            <li><a class="dropdown-item" href="#" routerLink="customer-list">Customer-List</a></li>
+            <li><a class="dropdown-item" href="#" routerLink="concessionnaire">Concessionnaire-List</a></li> 
+          </ul>
+
+        <li class="nav-item" *ngIf="isLoggedIn">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Moto_Catalogue</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#" routerLink="list-category">{{"ListCategory" | translate}}</a></li>
+            <li><a class="dropdown-item" href="#" routerLink="product-list">{{"ProductList" | translate}}</a></li>
+            <li><a class="dropdown-item" href="#" routerLink="products">{{"Products" | translate}}</a></li>
+            <li><a class="dropdown-item" href="#" routerLink="facture">{{"Facture" | translate}}</a></li>
+          </ul>       
+        </li>
+
+        <li class="nav-item" *ngIf="isLoggedIn">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Multi-Billing</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#" routerLink="billing">{{"Billing"}}</a></li>   
+            <li><a class="dropdown-item" href="#" routerLink="creditcard-list">{{"CreditCard-List"}}</a></li>             
+            
+          </ul>
+        </li>
+
+        <li class="nav-item" *ngIf="isLoggedIn">
+          <app-cart></app-cart>
+        </li> 
+
+        <li class="nav-item dropdown" *ngIf="isLoggedIn">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Login</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#" routerLink="user">{{"Account Settings" | translate}}</a></li>
+            <li><a class="dropdown-item" href="#" (click)="logout()">{{"Logout" | translate}}</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown" *ngIf="isLoggedIn">
+          <li class="btn btn-outline-primary" (click)="useLang('en')">eng</li>
+          <br>
+          <li class="btn btn-outline-danger" (click)="useLang('fr')">fr</li>
+
+
+          <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">inter</a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <div class="div row gy-5">
+              <div class="d-grid gap-2 col-md-6">
+                <li class="btn btn-outline-primary" (click)="useLang('en')"><img src="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/flags/4x3/gb-eng.svg" alt="Anglais" /></li>
+                <li class="btn btn-outline-danger" (click)="useLang('fr')"><img src="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/flags/4x3/fr.svg" alt="Français" /></li>
+                <li class="btn btn-outline-success" (click)="useLang('ar')"><img src="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/flags/4x3/dz.svg" alt="Algerie" /></li>
+                <li class="btn btn-outline-dark" (click)="useLang('de')"><img src="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/flags/4x3/de.svg" alt="Germany" /></li>
+              </div>
+            </div>
+          </ul> -->
+       
+      </ul>
+    </div>
+  </div>
+</nav>
+

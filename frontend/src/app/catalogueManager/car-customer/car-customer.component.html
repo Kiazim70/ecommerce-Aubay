@@ -1,0 +1,22 @@
+<p>Customer</p>
+<div class="container">
+    <div class="text-center">
+        <h2 class="display-5" id="carHeader">{{ "Car" | translate }}</h2>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div *ngIf="car">
+                <h2>{{ car.name }}</h2>
+                <p>{{ car.description }}</p>
+                <p>{{ car.price | currency }}</p>
+                <div *ngIf="car">
+                    <img [src]="convertBytesToImageUrl(car.image)" alt="Car Image" class="img-fluid">
+                </div>
+            </div>
+              <div class="col-md-6">
+                 <app-save-customer [carId]="car.id"></app-save-customer>
+            </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="container text-center">
+    <h3 class="display-5">MOTOS</h3>
+    <!--<button class="btn btn-outline-success" type="submit"  href="#" (click)="addProduct()" >add-Produit</button>-->
+  </div>
+  <!-- <form #f="ngForm" (ngSubmit)="onSearchProducts(f.value)">
+    <div class="form-group">
+      <input type="text" ngModel name="query" placeholder="Enter product name">
+      <button class="btn btn-outline-primary btn-pill btn-lg"><span class="fa fa-search"></span></button>
+    </div>
+</form> -->
+  <input type="text" [(ngModel)]="searchTerm" (keyup)="applyFilter()" placeholder="Search...">
+  <button class="btn btn-outline-primary btn-pill btn-lg"><span class="fa fa-search"></span></button>
+  
+  <div class="row">
+    <div class="col-md-3 mb-4" *ngFor="let product of filteredProducts " >
+      <div class="card p-2" [routerLink]="['/product', product.id]" style="cursor: pointer;">
+        <img [src]="convertBytesToImageUrl(product.image)" alt="Product Image">
+        <div class="card-body p-2">
+          <h6 class="card-title">{{ product.name }}</h6>
+          <p class="card-text">${{ product.price }}</p>
+        </div>
+        </div>
+    </div>
+
+    <mat-paginator
+    [pageSize]="pageSize"
+    [pageIndex]="pageIndex"
+    [pageSizeOptions]="[5,10, 25, 50]"
+    [length]="totalProducts"
+    (page)="onPageChange($event)"
+  ></mat-paginator>
+  
+  </div>
+  </div>

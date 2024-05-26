@@ -1,0 +1,32 @@
+
+<h3>Update Customer</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="updateCustomer()" [formGroup]="customerForm">
+    <mat-form-field>
+      <input matInput formControlName="id" placeholder="Id" readonly>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="firstname" placeholder="FirstName">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="lastname" placeholder="LastName">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="email" placeholder="Email">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="phone" placeholder="Phone">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="adress" placeholder="Adress">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="zipcode" placeholder="Zipcode">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="country" placeholder="country">
+    </mat-form-field>
+    <br>
+    <button mat-raised-button color="primary" type="submit">Update</button>
+  </form>
+</div>

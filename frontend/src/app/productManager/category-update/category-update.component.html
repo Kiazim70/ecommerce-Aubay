@@ -1,0 +1,25 @@
+<p>category-update</p>
+
+<div [hidden]="submitted" style="width: 400px;">
+  <form [formGroup]="categoryFormUpdateGroup" (ngSubmit)="onUpdateCategory()">
+    <mat-form-field>
+      <input matInput type="text" placeholder="ID" formControlName="id">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="text" placeholder="Locale" formControlName="locale">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="text" placeholder="Name" formControlName="name">
+    </mat-form-field>
+    <div class="form-group">
+      <label for="image">Image:</label>
+      <input type="file" accept="image/*" (change)="onSelectFile($event)">
+    </div>
+    <div class="mt-3" *ngIf="image">
+      <h4>Selected Image :</h4>
+      <img [src]="image" alt="Selected Image" style="max-width: 100%; height: auto;">
+    </div>
+    <button mat-raised-button type="submit" color="primary">Submit</button>
+  </form>
+</div>
+

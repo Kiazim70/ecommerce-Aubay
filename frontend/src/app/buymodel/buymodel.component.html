@@ -1,0 +1,22 @@
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <h2 class="display-5" id="buyHeader">{{ "buyModel" | translate }}</h2>
+        <div class="row">
+          <div class="col-md-12">
+            <p>{{ model.modelname }}</p>
+            <p>{{ model.city }}</p>
+            <p>{{ model.price | currency }}</p>
+            <img [src]="convertBytesToImageUrl(model.image)" alt="Model Image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <app-credit-card-form ></app-credit-card-form>
+      </div>
+    </div>
+  </div>
+  
+
+

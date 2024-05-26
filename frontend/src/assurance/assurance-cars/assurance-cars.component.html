@@ -1,0 +1,25 @@
+
+
+<div class="container">
+    <div class="container text-center">
+      <h3 class="display-5">AssuranceCars</h3>
+  
+  
+    <!-- Display Cars -->
+    <div class="row">
+    
+      <div class="col-md-3 mb-4" *ngFor="let assurancecar of assuranceCars">
+        <div class="card p-2" [routerLink]="['/assurancecars', assurancecar.id]" style="cursor: pointer;">
+
+        <img [src]="convertBytesToImageUrl(assurancecar.image)" alt="Assurancecar Image">
+        <div class="card-body p-2">
+          <h6 class="card-title">{{ assurancecar.name }}</h6>
+       
+        </div>
+        </div> 
+      </div>
+  
+  
+  </div>
+
+  <button class="btn btn-primary" (click)="getQuote()"><a>{{"Get a Quote" | translate}}</a></button>

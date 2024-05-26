@@ -1,0 +1,85 @@
+<h4>Your vehicle</h4>
+<div class="container">
+  <form [formGroup]="tarifAutoForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label>How would you like to find your vehicle?</label>
+      <div>
+        <input type="radio" formControlName="searchOption" value="brand_model" id="brand_model">
+        <label for="brand_model">By brand and model</label>
+      </div>
+      <div>
+        <input type="radio" formControlName="searchOption" value="registration" id="registration">
+        <label for="registration">By registration</label>
+      </div>
+    </div>
+
+    <div *ngIf="searchBy === 'brand_model'">
+      <div>
+        <label for="brand">Brand :</label>
+        <input id="brand" formControlName="brand" type="text">
+      </div>
+      <div>
+        <label for="model">Model :</label>
+        <input id="model" formControlName="model" type="text">
+      </div>
+    </div>
+
+    <div *ngIf="searchBy === 'registration'">
+      <div>
+        <label for="registration">Registration :</label>
+        <input id="registration" formControlName="registration" type="text">
+      </div>
+    </div>
+
+    <div>
+      <label for="zipcode">ZipCode :</label>
+      <input id="zipcode" formControlName="zipcode" type="text" placeholder="Ex: 75010">
+    </div>
+
+    <div>
+      <label for="city">Enter your city :</label>
+      <input id="city" formControlName="city" type="text">
+    </div>
+
+    <div>
+      <label for="dateOfBirth">Date Of Birth :</label>
+      <input id="dateOfBirth" formControlName="dateOfBirth" type="date">
+    </div>
+
+    <div>
+      <label for="ageObtainingPermit">Age for obtaining a driving license :</label>
+      <input id="ageObtainingPermit" formControlName="ageObtainingPermit" type="number">
+    </div>
+
+    <div>
+      <label for="bonus">Bonus :</label>
+      <input id="bonus" formControlName="bonus" type="text">
+    </div>
+
+    <div>
+      <label for="lastname">Last Name :</label>
+      <input id="lastname" formControlName="lastname" type="text">
+    </div>
+
+    <div>
+      <label for="firstname">First Name :</label>
+      <input id="firstname" formControlName="firstname" type="text">
+    </div>
+
+    <div>
+      <label for="phone">Mobile Phone :</label>
+      <input id="phone" formControlName="phone" type="text">
+    </div>
+
+    <div>
+      <label for="email">Mail Address :</label>
+      <input id="email" formControlName="email" type="email">
+    </div>
+    <div>
+      <label for="local">Local :</label>
+      <input id="local" formControlName="local" type="local">
+    </div>
+
+    <button mat-raised-button color="primary" type="submit">Create</button>
+  </form>
+</div>

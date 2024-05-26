@@ -1,0 +1,49 @@
+<h4>Products-List</h4>
+<input type="text" [(ngModel)]="searchTerm" (keyup)="applyFilter()" placeholder="Search...">
+<button class="btn btn-outline-primary btn-pill btn-lg"><span class="fa fa-search"></span></button>
+
+  
+  <table class="table container">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Locale</th>
+        <th scope="col">Category_id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Description</th>
+        <th scope="col">Image</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+
+
+      <tr *ngFor="let product of filteredProducts ">
+        
+        <td>{{product.id }}</td>
+        <td>{{product.locale }}</td>
+        <td>{{product.category_id }}</td>
+        <td>{{product.name }}</td>
+        <td>{{product.price }}</td>
+        <td>{{product.description }}</td>
+        <td>
+          <img [src]="convertBytesToImageUrl(product.image)" alt="Product Image">
+        </td>
+        <td>
+          <button mat-icon-button color="accent" (click)="addProduct(product)"><mat-icon>add</mat-icon></button>
+          <button mat-icon-button color="warn" [routerLink]="['/product-update', product.id]"><mat-icon>edit</mat-icon></button>
+          <button mat-icon-button color="warn" (click)="deleteProduct(product.id)"><mat-icon>delete</mat-icon></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+
+<mat-paginator 
+    [pageIndex]="0"
+    [length]="totalProducts" 
+    [pageSize]="pageSize" 
+    [pageSizeOptions]="[5, 10, 25, 100]" 
+    (page)="onPageChange($event)">
+</mat-paginator>

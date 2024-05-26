@@ -1,0 +1,28 @@
+
+<div class="container">
+    <div class="container text-center">
+        <h3 class="display-5">All Brands</h3>
+        <!--<button class="btn btn-outline-success" type="submit"  href="#" (click)="addProduct()" >add-Produit</button>-->
+    </div>
+    <div class="row">
+        <div class="col-md-3 mb-4" *ngFor="let brand of brands" >
+            <div class="card p-2"style="width: 14rem;"><a [routerLink]="['/models', brand.id]" style="cursor: pointer;">
+                <!-- <img [src]="categorie.image" id="productImg" alt="{{ categorie.name }}"> -->
+
+                <div class="card-body p-2">
+                    <div class="card-body p-2">
+                        <h6 class="card-title">{{ brand.brandname }}</h6>
+                        <p class="card-text">{{ brand.id }}</p>
+                        <!-- <p class="card-text">{{ categorie.locale }}</p> -->
+                        <img [src]="convertBytesToImageUrl(brand.image)" alt="Category Image">
+
+                     </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+   
+
+
+

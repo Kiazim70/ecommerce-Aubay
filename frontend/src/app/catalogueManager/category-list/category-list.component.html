@@ -1,0 +1,29 @@
+<p>category-list</p>
+
+<table class="table container">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Locale</th>
+        <th scope="col">NameCat</th>
+        <th scope="col">Image</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let categorie of category | async">
+        
+        <td>{{categorie.id }}</td>
+        <td>{{categorie.locale }}</td>
+        <td>{{categorie.nameCat }}</td>
+        <td>
+          <img [src]="convertBytesToImageUrl(categorie.image)" alt="Category Image">
+        </td>
+        <td>
+          <button mat-icon-button color="accent" (click)="addCategory(categorie)"><mat-icon>add</mat-icon></button>
+          <button mat-icon-button color="warn" [routerLink]="['/update-category', categorie.id]"><mat-icon>update</mat-icon></button>
+          <button mat-icon-button color="warn" (click)="deleteCategory(categorie.id)"><mat-icon>delete</mat-icon></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>

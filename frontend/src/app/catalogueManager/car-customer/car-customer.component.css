@@ -1,0 +1,27 @@
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+.container {
+  margin-top: 20px;
+}
+
+.img-fluid {
+  max-width: 50%;
+  height: auto;
+}
+
+.text-center {
+  margin-bottom: 20px;
+}
+
+
+
+  

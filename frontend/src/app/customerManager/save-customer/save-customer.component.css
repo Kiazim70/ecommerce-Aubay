@@ -1,0 +1,33 @@
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  } 
+  
+  
+   .form-container {
+    display: flex;
+    justify-content: flex-end; /* Alignement à droite */
+    gap: 20px; /* Espace entre les sections */
+   margin-right: 300px; /* Espace du bord droit de l'écran */
+  } 
+  
+  
+  .form-section {
+    flex: 1;
+  }
+  
+  .form-button {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  

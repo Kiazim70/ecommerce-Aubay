@@ -1,0 +1,57 @@
+<h4>Tarif Auto List</h4>
+<div class="container">
+    <input type="text" [(ngModel)]="searchTerm" (keyup)="loadTarifsAuto()" placeholder="Search...">
+    <button class="btn btn-outline-primary btn-pill btn-lg"><span class="fa fa-search"></span></button>
+
+<table class="table container">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Local</th>
+      <th scope="col">Brand</th>
+      <th scope="col">Model</th>
+      <th scope="col">City</th>
+      <th scope="col">ZipCode</th>
+      <th scope="col">Email</th>
+      <th scope="col">LastName</th>
+      <th scope="col">FirstName</th>
+      <th scope="col">Bonus</th>
+      <th scope="col">Phone</th>
+      <th scope="col">DateOfBirth</th>
+      <th scope="col">ageObtainingPermit</th>
+      <th scope="col">registration</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+
+
+    <tr *ngFor="let tarfAuto of tarifsAuto ">
+      
+      <td>{{tarfAuto.id }}</td>
+      <td>{{tarfAuto.local }}</td>
+      <td>{{tarfAuto.brand }}</td>
+      <td>{{tarfAuto.model }}</td>
+      <td>{{tarfAuto.city }}</td>
+      <td>{{tarfAuto.zipcode }}</td>
+      <td>{{tarfAuto.email }}</td>
+      <td>{{tarfAuto.lastname }}</td>
+      <td>{{tarfAuto.firstname }}</td>
+      <td>{{tarfAuto.bonus }}</td>
+      <td>{{tarfAuto.phone }}</td>
+      <td>{{tarfAuto.dateOfBirth }}</td>
+      <td>{{tarfAuto.ageObtainingPermit }}</td> 
+      <td>{{tarfAuto.registration }}</td>   
+      <td>
+      <button mat-icon-button color="accent" (click)="addTarifAuto(tarfAuto)"><mat-icon>add</mat-icon></button>
+      <button mat-icon-button color="accent" (click)="updateTarifAuto(tarfAuto.id)"><mat-icon>update</mat-icon></button>
+      <button mat-icon-button color="warn" (click)="deleteTarifAuto(tarfAuto.id)"><mat-icon>delete</mat-icon></button>
+      </td>
+    </tr>
+  </tbody>
+<mat-paginator 
+    [length]="totaltarifAuto" 
+    [pageSize]="pageSize" 
+    [pageSizeOptions]="[5, 10, 25, 100]" 
+    (page)="onPageChange($event)">
+</mat-paginator>

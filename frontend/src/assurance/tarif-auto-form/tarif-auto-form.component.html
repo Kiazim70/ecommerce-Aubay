@@ -1,0 +1,81 @@
+<h4>{{ isEditMode ? 'Update' : 'Add' }} Tarif Auto</h4>
+<div class="container">
+  <form (ngSubmit)="onSubmit()" [formGroup]="tarifAutoForm" class="form-container">
+
+    <!-- <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Id</mat-label>
+      <input matInput id="id" formControlName="id" type="number" placeholder="Id">
+    </mat-form-field> -->
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Brand</mat-label>
+      <input matInput id="brand" formControlName="brand" type="text" placeholder="Brand">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Model</mat-label>
+      <input matInput id="model" formControlName="model" type="text" placeholder="Model">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Registration</mat-label>
+      <input matInput id="registration" formControlName="registration" type="text" placeholder="Registration">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Local</mat-label>
+      <input matInput id="local" formControlName="local" type="text" placeholder="Locale: en">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>ZipCode</mat-label>
+      <input matInput id="zipcode" formControlName="zipcode" type="text" placeholder="Zipcode">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Enter your city</mat-label>
+      <input matInput id="city" formControlName="city" type="text" placeholder="City">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Date Of Birth</mat-label>
+      <input matInput id="dateOfBirth" formControlName="dateOfBirth" type="date" placeholder="Date">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Age for obtaining a driving license</mat-label>
+      <input matInput id="ageObtainingPermit" formControlName="ageObtainingPermit" type="number" placeholder="Age for obtaining a driving license">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Bonus</mat-label>
+      <input matInput id="bonus" formControlName="bonus" type="text" placeholder="Bonus">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Last Name</mat-label>
+      <input matInput id="lastname" formControlName="lastname" type="text" placeholder="Last Name">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>First Name</mat-label>
+      <input matInput id="firstname" formControlName="firstname" type="text" placeholder="First Name">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Mobile Phone</mat-label>
+      <input matInput id="phone" formControlName="phone" type="text" placeholder="Mobile Phone">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Mail Address</mat-label>
+      <input matInput id="email" formControlName="email" type="email" placeholder="Mail Address">
+    </mat-form-field>
+
+    <div class="form-button">
+      <button mat-raised-button color="primary" type="submit">{{ isEditMode ? 'Update' : 'Save' }}</button>
+     
+      <button mat-button type="button" (click)="onCancel()">Cancel</button>
+    </div>
+  </form>
+</div>

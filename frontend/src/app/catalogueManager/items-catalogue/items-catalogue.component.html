@@ -1,0 +1,29 @@
+
+<div class="container">
+    <div class="container text-center">
+        <h3 class="display-5">Category Cars</h3>
+        <!--<button class="btn btn-outline-success" type="submit"  href="#" (click)="addProduct()" >add-Produit</button>-->
+    </div>
+    <div class="row">
+        <div class="col-md-3 mb-4" *ngFor="let cat of category" >
+            <div class="card p-2"style="width: 14rem;"><a [routerLink]="['/cars', cat.id]" style="cursor: pointer;">
+                <!-- <img [src]="categorie.image" id="productImg" alt="{{ categorie.name }}"> -->
+
+                <div class="card-body p-2">
+                    <div class="card-body p-2">
+                        <h6 class="card-title">{{ cat.nameCat }}</h6>
+                        <p class="card-text">{{ cat.id }}</p>
+                        <!-- <p class="card-text">{{ categorie.locale }}</p> -->
+                        <img [src]="convertBytesToImageUrl(cat.image)" alt="Category Image">
+
+                     </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+    <div>
+    <app-brands></app-brands>
+    </div>
+
+

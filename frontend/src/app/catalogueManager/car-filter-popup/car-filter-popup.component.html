@@ -1,0 +1,42 @@
+<div class="popup" *ngIf="isVisible">
+    <div class="popup-content">
+      <span class="close-btn" (click)="closePopup()">&times;</span>
+      <h4>Price</h4>
+      <ul>
+        <li><input type="radio" name="price" value="Moins de 10 000 €"> Moins de 10 000 €</li>
+        <li><input type="radio" name="price" value="10 000 - 15 000 €"> 10 000 - 15 000 €</li>
+        <li><input type="radio" name="price" value="15 000 - 20 000 €"> 15 000 - 20 000 €</li>
+        <li><input type="radio" name="price" value="20 000 - 25 000 €"> 20 000 - 25 000 €</li>
+        <li><input type="radio" name="price" value="Plus de 25 000 €"> Plus de 25 000 €</li>
+      </ul>
+  
+      <h4>Brand</h4>
+      <ul>
+        <li><input type="radio" name="brand" value="Renault"> Renault</li>
+        <li><input type="radio" name="brand" value="Volkswagen"> Volkswagen</li>
+        <li><input type="radio" name="brand" value="Peugeot"> Peugeot</li>
+        <li><input type="radio" name="brand" value="Dacia"> Dacia</li>
+        <li><input type="radio" name="brand" value="Audi"> Audi</li>
+      </ul>
+  
+      <h4>Mileage</h4>
+      <ul>
+        <li><input type="radio" name="mileage" value="Moins de 10 000 km"> Moins de 10 000 km</li>
+        <li><input type="radio" name="mileage" value="10 000 - 20 000 km"> 10 000 - 20 000 km</li>
+        <li><input type="radio" name="mileage" value="20 000 - 50 000 km"> 20 000 - 50 000 km</li>
+        <li><input type="radio" name="mileage" value="50 000 - 100 000 km"> 50 000 - 100 000 km</li>
+        <li><input type="radio" name="mileage" value="Plus de 100 000 km"> Plus de 100 000 km</li>
+      </ul>
+  
+      <h4>Fuel type</h4>
+      <ul>
+        <li><input type="radio" name="fuel" value="Essence"> Essence</li>
+        <li><input type="radio" name="fuel" value="Diesel"> Diesel</li>
+        <li><input type="radio" name="fuel" value="Hybride"> Hybride</li>
+        <li><input type="radio" name="fuel" value="Électrique"> Électrique</li>
+      </ul>
+  
+      <button (click)="seeAllCars()">Voir toutes les voitures</button>
+    </div>
+  </div>
+  

@@ -1,0 +1,36 @@
+<h3>Credit-Card</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form [formGroup]="creditCardForm" (ngSubmit)="onSubmit()">
+    <div>
+      <mat-form-field>
+        <input matInput formControlName="cardNumber" placeholder="Card Number" required>
+        <mat-error *ngIf="creditCardForm.controls['cardNumber'].hasError('required')">
+          Card Number is required
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput formControlName="expiryDate" placeholder="Expiry Date" required>
+        <mat-error *ngIf="creditCardForm.controls['expiryDate'].hasError('required')">
+          Expiry Date is required
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput formControlName="cvv" placeholder="CVV" required>
+        <mat-error *ngIf="creditCardForm.controls['cvv'].hasError('required')">
+          CVV is required
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput formControlName="customerId" placeholder="Customer Id" required>
+        <mat-error *ngIf="creditCardForm.controls['customerId'].hasError('required')">
+          Customer Id is required
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <button mat-raised-button color="primary" type="submit">Add</button>
+  </form>
+</div>
+

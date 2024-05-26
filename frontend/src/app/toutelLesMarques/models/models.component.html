@@ -1,0 +1,35 @@
+
+
+<div class="container">
+    <div class="container text-center">
+      <h3 class="display-5">Models</h3>
+  
+    <!-- Search Box  -->
+    <input type="text" [(ngModel)]="searchTerm" (keyup)="applyFilter()" placeholder="Search...">
+    <button class="btn btn-outline-primary btn-pill btn-lg"><span class="fa fa-search"></span></button>
+  
+    <!-- Display Models -->
+    <div class="row">
+    
+      <div class="col-md-3 mb-4" *ngFor="let model of filteredModels">
+        <div class="card p-2" [routerLink]="['/model', model.id]" style="cursor: pointer;">
+  
+        <img [src]="convertBytesToImageUrl(model.image)" alt="Model Image">
+          <div class="card-body p-2">
+            <h6 class="card-title">{{ model.modelname }}</h6>
+            <p class="card-text">{{ model.city }}</p>
+            <p class="card-text">{{ model.price | currency }}</p>
+          </div>
+        </div> 
+      </div>
+  
+    
+    Pagination
+    <mat-paginator 
+        [length]="totalModels" 
+        [pageSize]="pageSize" 
+        [pageSizeOptions]="[5, 12, 24, 100]" 
+        (page)="onPageChange($event)">
+    </mat-paginator>
+  
+  </div>

@@ -1,0 +1,17 @@
+<div>
+  <label for="concessionnaire">Sélectionnez le concessionnaire :</label>
+  <select class="form-control" id="concessionnaire" name="concessionnaire" [(ngModel)]="selectedConcessionnaire">
+    <option *ngFor="let c of concessionnaires" [ngValue]="c">{{ c.nameCompagny }}</option>
+  </select>
+</div>
+
+<div *ngIf="selectedConcessionnaire">
+  <h3>Détails du concessionnaire sélectionné :</h3>
+  <p><strong>Nom de la compagnie :</strong> {{ selectedConcessionnaire.nameCompagny }}</p>
+  <p><strong>N° SIRET :</strong> {{ selectedConcessionnaire.nsiret }}</p>
+  <p><strong>Email :</strong> {{ selectedConcessionnaire.email }}</p>
+  <p><strong>Téléphone :</strong> {{ selectedConcessionnaire.phone }}</p>
+</div>
+<div>
+  <button class="btn btn-primary" (click)="generatePDF()">Générer PDF</button>
+</div>

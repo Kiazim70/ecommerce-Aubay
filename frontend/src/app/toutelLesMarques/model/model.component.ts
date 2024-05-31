@@ -8,6 +8,7 @@ import { TranslateService } from 'src/app/services/translation/translate.service
 import { TranslatePipe } from "../../services/translation/translate.pipe";
 import { CustomerFormComponent } from "../../customerManager/customer-form/customer-form.component";
 import { ModelCustomerComponent } from "../../model-customer/model-customer.component";
+import { MessageModalComponent } from "../../messageManager/message-modal/message-modal.component";
 
 @Component({
     selector: 'app-model',
@@ -15,7 +16,7 @@ import { ModelCustomerComponent } from "../../model-customer/model-customer.comp
     templateUrl: './model.component.html',
     styleUrl: './model.component.css',
     imports: [NgIf, NgFor, FormsModule, CurrencyPipe,
-        TranslatePipe, RouterLink, NgClass, CustomerFormComponent, ModelCustomerComponent]
+        TranslatePipe, RouterLink, NgClass, CustomerFormComponent, ModelCustomerComponent, MessageModalComponent]
 })
 export class ModelComponent implements OnInit {
 

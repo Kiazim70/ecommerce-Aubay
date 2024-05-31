@@ -7,13 +7,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="batchapiback" />
+        <module name="kafka-api" />
+        <module name="batch-api" />
         <module name="backend" />
         <module name="frontend" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="batch-api-back" target="1.6" />
+      <module name="batchapiback" target="21" />
       <module name="batchapiback (1)" target="17" />
       <module name="batchapiback (2)" target="21" />
       <module name="com.ecommerce.batchapiback" target="17" />
@@ -23,11 +25,13 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="backend" options="-parameters" />
+      <module name="batch-api" options="-parameters" />
       <module name="batch-api-back" options="-parameters" />
       <module name="batchapiback" options="-parameters" />
       <module name="batchapiback (1)" options="-parameters" />
       <module name="com.ecommerce.batchapiback" options="-parameters" />
       <module name="ecommerce-parent" options="-parameters" />
+      <module name="kafka-api" options="-parameters" />
       <module name="pom-parent" options="" />
     </option>
   </component>

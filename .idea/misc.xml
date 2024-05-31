@@ -8,6 +8,8 @@
         <option value="$PROJECT_DIR$/batch-api-back/pom.xml" />
         <option value="$PROJECT_DIR$/k-triqui-test-project1-api/pom.xml" />
         <option value="$PROJECT_DIR$/pom-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/kafka-api/pom.xml" />
+        <option value="$PROJECT_DIR$/batch-api/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

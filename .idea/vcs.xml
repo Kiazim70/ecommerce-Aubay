@@ -3,5 +3,9 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/batch-api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/k-triqui-test-project1-api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/kafka-api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pom-parent" vcs="Git" />
   </component>
 </project>

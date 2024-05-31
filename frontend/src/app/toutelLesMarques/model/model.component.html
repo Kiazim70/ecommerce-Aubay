@@ -3,6 +3,9 @@
   <div class="text-center">
     <h2 class="display-5" id="carHeader">{{ "Model" | translate }}</h2>
   </div>
+
+  <app-message-modal></app-message-modal>
+
   <div class="row">
     <div class="col-md-6">
       <div *ngIf="model">
@@ -11,6 +14,7 @@
         <p>{{ model.price | currency }}</p>
       <button class="btn btn-primary" (click)="modelCustomer(model.id)"><a>{{"Confirm" | translate}}</a></button>
       </div>
+  
     <!-- </div>
     <div class="col-md-6"> -->
       <img [src]="convertBytesToImageUrl(model.image)" alt="Model Image" class="img-fluid">

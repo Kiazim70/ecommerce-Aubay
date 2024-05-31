@@ -15,7 +15,7 @@ COPY default.conf /etc/nginx/conf.d/default.conf
 COPY nginx.conf /etc/nginx/nginx.conf
 
 # Make port 4000 available for the container
-EXPOSE 4000
+EXPOSE 4200
 
 # Start Nginx and our Angular Universal server
 CMD ["nginx", "-g", "daemon off;"]

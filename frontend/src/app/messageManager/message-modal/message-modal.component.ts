@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { MessageService } from 'src/app/services/message.service';
 
 @Component({
   selector: 'app-message-modal',
@@ -11,8 +12,11 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 export class MessageModalComponent implements OnInit {
 
     messageForm: FormGroup;
+    message: any;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder,
+              private messageService : MessageService ) {
+                
     this.messageForm = this.fb.group({
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],
@@ -29,8 +33,12 @@ export class MessageModalComponent implements OnInit {
 
   onSubmit() {
     if (this.messageForm.valid) {
-      console.log(this.messageForm.value);
-      // handle form submission logic here
+     this.messageService.sendMessage(this.messageForm.value).subscribe(
+      (response: any) => {
+        this.messageForm = response;
+
+      });
     }
   }
+
 }

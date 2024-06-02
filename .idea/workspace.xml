@@ -5,47 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47c2e51c-20f9-4c64-81ef-d31495964729" name="Changes" comment="commit some class">
-      <change afterPath="$PROJECT_DIR$/../CheikhMoh/.idea/CheikhMoh.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProEmailGenerator" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProGenerator/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProGenerator/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProGenerator/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProGenerator/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProGenerator/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProGenerator/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProGenerator/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../customer/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../customer/.idea/customer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../customer/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../customer/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../customer/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../customer/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Keyist-Ecommerce" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProEmailGenerator" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProGenerator/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProGenerator/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProGenerator/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProGenerator/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProGenerator/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProGenerator/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProGenerator/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/batch-api-back/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/batch-api-back/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/batch-api-back/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/batch-api-back/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/batch-api-back/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/batch-api-back/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/batch-api-back/src/main/java/com/ecommerce/batchapiback/BatchApiBackApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/batch-api-back/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/batch-api-back/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/batch-api-back/src/test/java/com/ecommerce/batchapiback/BatchApiBackApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/batchapiback/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/batchapiback/target/batchapiback-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/batchapiback/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/catalogueManager/car/car.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/catalogueManager/car/car.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/messageManager/message-modal/message-modal.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/messageManager/message-modal/message-modal.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/toutelLesMarques/model/model.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/toutelLesMarques/model/model.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/toutelLesMarques/model/model.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/toutelLesMarques/model/model.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/batch-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/batch-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/batch-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/batch-api/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k-triqui-test-project1-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/k-triqui-test-project1-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k-triqui-test-project1-api/src/main/java/com/angularspringbootecommerce/backend/BackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/k-triqui-test-project1-api/src/main/java/com/angularspringbootecommerce/backend/BackendApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k-triqui-test-project1-api/src/main/java/com/angularspringbootecommerce/backend/repository/BillRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/k-triqui-test-project1-api/src/main/java/com/angularspringbootecommerce/backend/repository/BillRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-api/src/main/java/kafka/example/kafka_api/config/KafkaConsumerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-api/src/main/java/kafka/example/kafka_api/config/KafkaConsumerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom-parent/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +45,8 @@
         <entry key="$PROJECT_DIR$/.." value="master" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/batch-api" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/kafka-api" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/batch-api-back/pom.xml" root0="SKIP_INSPECTION" />
@@ -76,12 +56,14 @@
     <setting file="file://$PROJECT_DIR$/kafka-api/src/main/resources/application.properties" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/pom-parent/pom.xml" root0="SKIP_INSPECTION" />
   </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$PROJECT_DIR$/../../../../apache-maven-3.9.6" />
         <option name="nonRecursive" value="true" />
-        <option name="useMavenConfig" value="true" />
         <option name="workOffline" value="true" />
       </MavenGeneralSettings>
     </option>
@@ -89,6 +71,9 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2fuqcYXQlROIgvAl8ogj3FPFYi2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -101,14 +86,28 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Maven.batch-api-back.executor": "Debug",
+    "Maven.batch-api.executor": "Debug",
+    "Maven.k-triqui-test-project1-api.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "21",
+    "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/kiazi/IdeaProjects/ecommerce-parent/batch-api",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "ts.external.directory.path": "C:\\Users\\kiazi\\IdeaProjects\\ecommerce-parent\\frontend\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -133,7 +132,16 @@
       <recent name="kafka.example.kafka_api.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven.kafka-api [spring-boot:run]">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Maven.batch-api">
     <configuration name="BatchApiBackApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ecommerce.batchapiback.BatchApiBackApplication" />
       <module name="batchapiback" />
@@ -161,12 +169,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="batch-api-back" type="MavenRunConfiguration" factoryName="Maven">
+    <configuration name="batch-api" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
         <option name="myRunnerSettings" />
         <option name="myRunnerParameters">
           <MavenRunnerParameters>
+            <option name="cmdOptions" />
             <option name="profiles">
               <set />
             </option>
@@ -175,12 +184,16 @@
                 <option value="spring-boot:run" />
               </list>
             </option>
+            <option name="multimoduleDir" />
             <option name="pomFileName" />
             <option name="profilesMap">
               <map />
             </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
             <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$/batch-api-back" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/batch-api" />
           </MavenRunnerParameters>
         </option>
       </MavenSettings>
@@ -192,18 +205,18 @@
           <MavenGeneralSettings>
             <option name="alwaysUpdateSnapshots" value="false" />
             <option name="checksumPolicy" value="NOT_SET" />
+            <option name="customMavenHome" value="$PROJECT_DIR$/../../../../apache-maven-3.9.6" />
             <option name="emulateTerminal" value="false" />
             <option name="failureBehavior" value="NOT_SET" />
             <option name="localRepository" value="$MAVEN_REPOSITORY$" />
             <option name="mavenHome" value="$PROJECT_DIR$/../../../../apache-maven-3.9.6" />
+            <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
             <option name="nonRecursive" value="false" />
             <option name="outputLevel" value="INFO" />
-            <option name="pluginUpdatePolicy" value="DEFAULT" />
             <option name="printErrorStackTraces" value="false" />
             <option name="showDialogWithAdvancedSettings" value="false" />
             <option name="threads" />
             <option name="useMavenConfig" value="true" />
-            <option name="usePluginRegistry" value="false" />
             <option name="userSettingsFile" value="" />
             <option name="workOffline" value="false" />
           </MavenGeneralSettings>
@@ -211,6 +224,7 @@
         <option name="myRunnerSettings" />
         <option name="myRunnerParameters">
           <MavenRunnerParameters>
+            <option name="cmdOptions" />
             <option name="profiles">
               <set />
             </option>
@@ -219,9 +233,13 @@
                 <option value="spring-boot:run" />
               </list>
             </option>
+            <option name="multimoduleDir" />
             <option name="pomFileName" />
             <option name="profilesMap">
               <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
             </option>
             <option name="resolveToWorkspace" value="false" />
             <option name="workingDirPath" value="$PROJECT_DIR$/k-triqui-test-project1-api" />
@@ -236,6 +254,7 @@
         <option name="myRunnerSettings" />
         <option name="myRunnerParameters">
           <MavenRunnerParameters>
+            <option name="cmdOptions" />
             <option name="profiles">
               <set />
             </option>
@@ -244,9 +263,13 @@
                 <option value="spring-boot:run" />
               </list>
             </option>
+            <option name="multimoduleDir" />
             <option name="pomFileName" />
             <option name="profilesMap">
               <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
             </option>
             <option name="resolveToWorkspace" value="false" />
             <option name="workingDirPath" value="$PROJECT_DIR$/kafka-api" />
@@ -261,6 +284,7 @@
         <option name="myRunnerSettings" />
         <option name="myRunnerParameters">
           <MavenRunnerParameters>
+            <option name="cmdOptions" />
             <option name="profiles">
               <set />
             </option>
@@ -270,9 +294,13 @@
                 <option value="install" />
               </list>
             </option>
+            <option name="multimoduleDir" />
             <option name="pomFileName" />
             <option name="profilesMap">
               <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
             </option>
             <option name="resolveToWorkspace" value="false" />
             <option name="workingDirPath" value="$PROJECT_DIR$/pom-parent" />
@@ -281,19 +309,51 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="BackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.angularspringbootecommerce.backend.BackendApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BatchApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="batch-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.batch_api.BatchApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KafkaApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="kafka-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="kafka.example.kafka_api.KafkaApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.BatchApiBackApplication" />
       <item itemvalue="Application.KafkaApiApplication" />
-      <item itemvalue="Maven.batch-api-back" />
+      <item itemvalue="Maven.batch-api" />
       <item itemvalue="Maven.pom-parent [clean,install]" />
       <item itemvalue="Maven.k-triqui-test-project1-api" />
       <item itemvalue="Maven.kafka-api [spring-boot:run]" />
+      <item itemvalue="Spring Boot.BackendApplication" />
+      <item itemvalue="Spring Boot.BatchApiApplication" />
+      <item itemvalue="Spring Boot.KafkaApiApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.KafkaApiApplication" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -303,6 +363,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714661390585</updated>
+      <workItem from="1717153724177" duration="195000" />
+      <workItem from="1717153931618" duration="981000" />
+      <workItem from="1717318651177" duration="3033000" />
     </task>
     <task id="LOCAL-00001" summary="many component to commit">
       <option name="closed" value="true" />
@@ -352,8 +415,19 @@
       <option name="project" value="LOCAL" />
       <updated>1716746365949</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="commit some class">
+      <option name="closed" value="true" />
+      <created>1717150385492</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1717150385492</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -363,7 +437,7 @@
             <State>
               <option name="CUSTOM_BOOLEAN_PROPERTIES">
                 <map>
-                  <entry key="Show.Git.Branches" value="false" />
+                  <entry key="Show.Git.Branches" value="true" />
                 </map>
               </option>
             </State>

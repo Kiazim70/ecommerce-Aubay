@@ -4,28 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47c2e51c-20f9-4c64-81ef-d31495964729" name="Changes" comment="commit some class">
-      <change afterPath="$PROJECT_DIR$/../Keyist-Ecommerce" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProEmailGenerator" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProGenerator/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProGenerator/.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProGenerator/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProGenerator/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProGenerator/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProGenerator/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProGenerator/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/batch-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/batch-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/batch-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/batch-api/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k-triqui-test-project1-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/k-triqui-test-project1-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k-triqui-test-project1-api/src/main/java/com/angularspringbootecommerce/backend/BackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/k-triqui-test-project1-api/src/main/java/com/angularspringbootecommerce/backend/BackendApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k-triqui-test-project1-api/src/main/java/com/angularspringbootecommerce/backend/repository/BillRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/k-triqui-test-project1-api/src/main/java/com/angularspringbootecommerce/backend/repository/BillRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka-api/src/main/java/kafka/example/kafka_api/config/KafkaConsumerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-api/src/main/java/kafka/example/kafka_api/config/KafkaConsumerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom-parent/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="47c2e51c-20f9-4c64-81ef-d31495964729" name="Changes" comment="commit some class for updating project" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +24,7 @@
         <entry key="$PROJECT_DIR$/.." value="master" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/kafka-api" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/batch-api" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -90,7 +69,6 @@
     "Maven.batch-api.executor": "Debug",
     "Maven.k-triqui-test-project1-api.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "21",
@@ -365,7 +343,7 @@
       <updated>1714661390585</updated>
       <workItem from="1717153724177" duration="195000" />
       <workItem from="1717153931618" duration="981000" />
-      <workItem from="1717318651177" duration="3033000" />
+      <workItem from="1717318651177" duration="3356000" />
     </task>
     <task id="LOCAL-00001" summary="many component to commit">
       <option name="closed" value="true" />
@@ -456,7 +434,8 @@
     <MESSAGE value="5 file to commit" />
     <MESSAGE value="10 file to commitfor billing, concessionnaire and customer" />
     <MESSAGE value="commit some class" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit some class" />
+    <MESSAGE value="commit some class for updating project" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit some class for updating project" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
